@@ -7,7 +7,6 @@
     ./modules/conform.nix
 
     ./modules/autopairs.nix
-    ./modules/neoscroll.nix
     ./modules/bufdelete.nix
     ./modules/colourscheme.nix
     ./modules/comment.nix
@@ -18,8 +17,10 @@
     ./modules/lualine.nix
     ./modules/markdown-preview.nix
     ./modules/markview.nix
+    ./modules/neoscroll.nix
     ./modules/nvim-surround.nix
     ./modules/telescope.nix
+    ./modules/tmux-navigator.nix
     ./modules/treesitter.nix
 
     # ./modules/diagram.nix
