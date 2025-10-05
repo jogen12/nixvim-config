@@ -81,7 +81,7 @@
         function()
           if vim.fn.argc() == 0 then
             vim.schedule(function()
-              require('telescope').extensions.file_browser.file_browser()
+            require('telescope.builtin').find_files()
             end)
           end
         end
