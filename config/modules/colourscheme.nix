@@ -43,7 +43,7 @@
 
             -- nvim-cmp
             Pmenu                  = { bg = C.mantle },
-            PmenuSel               = { bg = C.mantle },
+            PmenuSel               = { fg = C.blue, bg = C.mantle, bold = true },
             NormalFloat            = { bg = C.mantle },
 
             CmpBorder              = { fg = C.blue, bg = C.mantle },
