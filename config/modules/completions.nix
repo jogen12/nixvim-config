@@ -133,19 +133,7 @@ in {
             };
           }
           {
-            name = "rg";
-            priority = 300;
-          }
-          {
             name = "path";
-            priority = 300;
-          }
-          {
-            name = "cmdline";
-            priority = 300;
-          }
-          {
-            name = "spell";
             priority = 300;
           }
           {
