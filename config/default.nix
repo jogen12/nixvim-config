@@ -21,5 +21,7 @@
     ./modules/nvim-surround.nix
     ./modules/telescope.nix
     ./modules/treesitter.nix
+
+    # ./modules/diagram.nix
   ];
 }

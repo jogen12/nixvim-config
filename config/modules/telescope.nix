@@ -4,6 +4,7 @@
     enable = true;
     extensions = {
       fzf-native.enable = true;
+      advanced-git-search.enable = true;
       ui-select = {
         enable = true;
         settings.__raw = "require('telescope.themes').get_dropdown({ winblend = 0 })";
