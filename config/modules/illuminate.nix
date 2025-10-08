@@ -15,7 +15,10 @@
       ];
       under_cursor = true;
       large_file_cutoff = 10000;
-      large_file_overrides = "nil";
+      large_file_overrides = {
+        providers = {};
+        under_cursor = false;
+      };
       min_count_to_highlight = 1;
       case_insensitive_regex = false;
       disable_keymaps = false;
