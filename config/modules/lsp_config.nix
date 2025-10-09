@@ -71,7 +71,7 @@
             diagnosticSeverityOverrides = {
               reportAttributeAccessIssue = "error";
               reportGeneralTypeIssues = "error";
-              reportUnknownMemberType = "warning";
+              # reportUnknownMemberType = "warning";
               reportOptionalMemberAccess = "warning";
             };
           };
