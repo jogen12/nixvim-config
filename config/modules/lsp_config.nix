@@ -61,6 +61,20 @@
         enable = true;
         settings = {
           pyright.disableOrganizeImports = true; # imports handled by Ruff
+
+          python.analysis = {
+            diagnosticMode = "workspace";
+            typeCheckingMode = "basic";
+            autoSearchPaths = true;
+            useLibraryCodeForTypes = true;
+
+            diagnosticSeverityOverrides = {
+              reportAttributeAccessIssue = "error";
+              reportGeneralTypeIssues = "error";
+              reportUnknownMemberType = "warning";
+              reportOptionalMemberAccess = "warning";
+            };
+          };
         };
       };
 

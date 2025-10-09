@@ -42,7 +42,6 @@
       options.desc = "Close buffer with window";
     }
 
-    # Для <leader>x нужен :Bdelete (из плагина bufdelete). Включи плагин ниже.
     {
       mode = "n";
       key = "<leader>x";
