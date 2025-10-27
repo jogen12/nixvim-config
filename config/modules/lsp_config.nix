@@ -3,6 +3,10 @@
   pkgs,
   ...
 }: {
+  extraPackages = with pkgs; [
+    fswatch
+  ];
+
   plugins.lsp = {
     enable = true;
     inlayHints = true;
