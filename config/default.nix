@@ -7,6 +7,7 @@
     ./modules/conform.nix
 
     ./modules/autopairs.nix
+    ./modules/bbye.nix
     ./modules/bufdelete.nix
     ./modules/colourscheme.nix
     ./modules/comment.nix
