@@ -11,50 +11,118 @@
   };
 
   plugins.treesitter-textobjects = {
-    enable = false;
-    select = {
-      enable = true;
-      lookahead = true;
-      keymaps = {
-        "aa" = "@parameter.outer";
-        "ia" = "@parameter.inner";
-        "af" = "@function.outer";
-        "if" = "@function.inner";
-        "ac" = "@class.outer";
-        "ic" = "@class.inner";
-        "ii" = "@conditional.inner";
-        "ai" = "@conditional.outer";
-        "il" = "@loop.inner";
-        "al" = "@loop.outer";
-        "at" = "@comment.outer";
+    enable = true;
+    settings = {
+      select = {
+        enable = true;
+        lookahead = true;
+
+        keymaps = [
+          {
+            key = "aa";
+            query = "@parameter.outer";
+          }
+          {
+            key = "ia";
+            query = "@parameter.inner";
+          }
+          {
+            key = "af";
+            query = "@function.outer";
+          }
+          {
+            key = "if";
+            query = "@function.inner";
+          }
+          {
+            key = "ac";
+            query = "@class.outer";
+          }
+          {
+            key = "ic";
+            query = "@class.inner";
+          }
+          {
+            key = "ii";
+            query = "@conditional.inner";
+          }
+          {
+            key = "ai";
+            query = "@conditional.outer";
+          }
+          {
+            key = "il";
+            query = "@loop.inner";
+          }
+          {
+            key = "al";
+            query = "@loop.outer";
+          }
+          {
+            key = "at";
+            query = "@comment.outer";
+          }
+        ];
       };
-    };
-    move = {
-      enable = true;
-      gotoNextStart = {
-        "]m" = "@function.outer";
-        "]]" = "@class.outer";
+
+      move = {
+        enable = true;
+        goto_next_start = [
+          {
+            key = "]m";
+            query = "@function.outer";
+          }
+          {
+            key = "]]";
+            query = "@class.outer";
+          }
+        ];
+        goto_next_end = [
+          {
+            key = "]M";
+            query = "@function.outer";
+          }
+          {
+            key = "][";
+            query = "@class.outer";
+          }
+        ];
+        goto_previous_start = [
+          {
+            key = "[m";
+            query = "@function.outer";
+          }
+          {
+            key = "[[";
+            query = "@class.outer";
+          }
+        ];
+        goto_previous_end = [
+          {
+            key = "[M";
+            query = "@function.outer";
+          }
+          {
+            key = "[]";
+            query = "@class.outer";
+          }
+        ];
       };
-      gotoNextEnd = {
-        "]M" = "@function.outer";
-        "][" = "@class.outer";
-      };
-      gotoPreviousStart = {
-        "[m" = "@function.outer";
-        "[[" = "@class.outer";
-      };
-      gotoPreviousEnd = {
-        "[M" = "@function.outer";
-        "[]" = "@class.outer";
-      };
-    };
-    swap = {
-      enable = true;
-      swapNext = {
-        "<leader>a" = "@parameters.inner";
-      };
-      swapPrevious = {
-        "<leader>A" = "@parameter.outer";
+
+      swap = {
+        enable = true;
+        swap_next = [
+          {
+            key = "<leader>a";
+            query = "@parameter.inner";
+          }
+        ];
+        swap_previous = [
+          {
+            key = "<leader>A";
+            query = "@parameter.outer";
+          }
+        ];
       };
     };
   };
